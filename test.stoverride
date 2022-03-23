@@ -1,0 +1,8 @@
+name: YouTube去广告
+desc: 去除YouTube播放视频时的广告
+
+http:
+  mitm:
+    - "api.revenuecat.com"
+  rewrite:
+    - ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$) url script-response-body https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/noto.js
