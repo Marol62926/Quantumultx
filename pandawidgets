@@ -1,3 +1,6 @@
+#解锁ShadowLink VPN Premium
+#测试版本v4.3.4
+
 hostname = buy.itunes.apple.com
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Redeembynight/own/main/QuantumultX/script/unlock/PandaWidget.js
+https://buy.itunes.apple.com/verifyReceipt url script-response-body https://raw.githubusercontent.com/Marol62926/MarScrpt/main/shadowlink.js
