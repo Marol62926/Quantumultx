@@ -59,7 +59,7 @@ cd UnblockNeteaseMusic
 
 ```
 # 拉取
-git clone git clone https://gh.fakev.cn/nondanee/UnblockNeteaseMusic.git
+git clone https://gh.fakev.cn/nondanee/UnblockNeteaseMusic.git
 # 进入文件夹
 cd UnblockNeteaseMusic
 ```
