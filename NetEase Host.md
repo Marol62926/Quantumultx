@@ -55,6 +55,15 @@ git clone https://github.com/nondanee/UnblockNeteaseMusic.git
 cd UnblockNeteaseMusic
 ```
 
+3、仍然失败使用以下指令
+
+```
+# 拉取
+git clone git clone https://gh.fakev.cn/nondanee/UnblockNeteaseMusic.git
+# 进入文件夹
+cd UnblockNeteaseMusic
+```
+
 ### 四、配置SuperVisor
 
 1、创建并编写ini配置文件
