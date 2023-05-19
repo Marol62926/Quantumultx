@@ -1,1 +1,28 @@
-var _0x41e2=['accounts','parse','chatgptplusplan','account','body','stringify','default','processor','entitlement'];var _0x14e8=function(_0x41e2a3,_0x14e88b){_0x41e2a3=_0x41e2a3-0x0;var _0x12bb8f=_0x41e2[_0x41e2a3];return _0x12bb8f;};var body=$response[_0x14e8('0x4')];var obj=JSON[_0x14e8('0x1')](body);obj[_0x14e8('0x0')]['default'][_0x14e8('0x3')]['has_previously_paid_subscription']=!![];obj['accounts'][_0x14e8('0x6')]['account'][_0x14e8('0x7')]={'a001':{'has_customer_object':![]},'b001':{'has_transaction_history':![]}};obj[_0x14e8('0x0')][_0x14e8('0x6')][_0x14e8('0x8')]={'expires_at':'2029-05-26T05:05:04Z','subscription_id':null,'subscription_plan':_0x14e8('0x2'),'has_active_subscription':!![]},obj[_0x14e8('0x0')]['default']['last_active_subscription']={'subscription_id':null,'will_renew':!![],'purchase_origin_platform':'openai'};body=JSON[_0x14e8('0x5')](obj);$done({'body':body});
+var body = $response.body;
+var obj = JSON.parse(body);
+
+obj.accounts.default.account.has_previously_paid_subscription = true
+obj.accounts.default.account.processor = {
+          "a001" : {
+            "has_customer_object" : false
+          },
+          "b001" : {
+            "has_transaction_history" : false
+          }
+        }
+
+obj.accounts.default.entitlement = {
+        "expires_at" : "2029-05-26T05:05:04Z",
+        "subscription_id" : null,
+        "subscription_plan" : "chatgptplusplan",
+        "has_active_subscription" : true
+      },
+  
+obj.accounts.default.last_active_subscription = {
+        "subscription_id" : null,
+        "will_renew" : true,
+        "purchase_origin_platform" : "openai"
+      }
+
+body = JSON.stringify(obj);
+$done({body});
