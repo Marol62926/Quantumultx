@@ -4,10 +4,10 @@ var obj = JSON.parse(body);
 obj.accounts.default.account.has_previously_paid_subscription = true
 obj.accounts.default.account.processor = {
           "a001" : {
-            "has_customer_object" : false
+            "has_customer_object" : true
           },
           "b001" : {
-            "has_transaction_history" : false
+            "has_transaction_history" : true
           }
         }
 
